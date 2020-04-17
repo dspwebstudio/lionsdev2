@@ -67,7 +67,8 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav m-auto d-flex align-items-center justify-content-center p-0">
                     <li class="nav-item">
-                        <a class="nav-link text-navbar active" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-navbar active" href="index.html">Inicio<span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-navbar" href="quienes-somos.html">Quienes Somos</a>
@@ -121,37 +122,44 @@
 
             <!-- Section Title -->
             <div class="view">
-                <div class="section-img d-block w-100">
-                    <img src="img/imagenes/c3.jpg" class="img-fluid w-100" alt="" srcset="">
+                <!-- Button trigger modal -->
+                <div type="button" data-toggle="modal" data-target="#exampleModal">
+                    <div class="section-img d-block w-100">
+                        <img src="img/imagenes/c4.jpg" class="img-fluid w-100 object-fit-cover" alt="" srcset="">
+                    </div>
                 </div>
-                <div class="mask rgba-stylish-strong section-title d-flex align-items-center justify-content-center">
-                    <div class="white-text text-justify">
-                        <h1 class="h1-responsive text-center">Articulo</h1>
-                        <hr class="hr-section-title">
-                        <br>
-                        <div class="blog-subtitle d-flex w-100 mb-3 mt-0">
-                            <!-- Author -->
-                            <div class="author mr-2 text-white">
-                                <i class="far fa-user text-theme"></i>
-                                <span>dsperez</span>
-                            </div>
-                            <!-- ./Author -->
+                <div class="mask rgba-stylish-strong section-title">
+                    <div class="texto-articulo max-width mx-auto d-flex">
+                        <div class="white-text">
+                            <h1 class="h1-responsive titulo-articulo titulo-texto text-uppercase font-weight-bold">
+                                Articulo</h1>
+                            <hr class="hr-section-title">
+                            <br>
+                            <div class="articulo-subtitle d-flex w-100 mb-3 mt-0 flex-column">
+                                <!-- Author -->
+                                <div class="author mr-2 text-white my-2">
+                                    <i class="far fa-user text-theme"></i>
+                                    <span>dsperez</span>
+                                </div>
+                                <!-- ./Author -->
 
-                            <!-- Date -->
-                            <div class="date mr-2 text-white">
-                                <i class="fas fa-calendar-alt text-theme"></i>
-                                <span>11/04/2020</span>
-                            </div>
-                            <!-- ./Date -->
+                                <!-- Date -->
+                                <div class="date mr-2 text-white my-2">
+                                    <i class="fas fa-calendar-alt text-theme"></i>
+                                    <span>11/04/2020</span>
+                                </div>
+                                <!-- ./Date -->
 
-                            <!-- Category -->
-                            <div class="category text-white">
-                                <i class="fas fa-check text-theme"></i>
-                                <span>Tecnología</span>
-                            </div>
-                            <!-- ./Category -->
+                                <!-- Category -->
+                                <div class="category text-white my-2">
+                                    <i class="fas fa-check text-theme"></i>
+                                    <span>Tecnología</span>
+                                </div>
+                                <!-- ./Category -->
 
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -163,16 +171,26 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="img/imagenes/c3.jpg" class="img-fluid" alt="" srcset="">
+                                <!-- Button trigger modal -->
+                                <div type="button" data-toggle="modal" data-target="#exampleModal">
+                                    <img src="img/imagenes/c4.jpg" class="img-fluid w-100 object-fit-cover" alt="" srcset="">
+                                </div>
                             </div>
                             <div class="col-md-8">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi neque laboriosam eum tempora
-                                    adipisci voluptas iusto dolor sed soluta nesciunt minima ducimus ex earum, porro non asperiores
-                                    eveniet. Illum rem voluptatem ex omnis sapiente? Dolorem, eveniet expedita, ducimus rerum
-                                    corrupti illo fuga aliquam maiores vel exercitationem repellendus? Quisquam consequatur,
-                                    voluptatum, qui totam unde necessitatibus a consequuntur nisi mollitia accusantium porro vero
-                                    numquam ab eaque laborum ullam facilis dolorum, ea voluptas ut ratione doloremque neque facere.
-                                    Debitis ex eveniet voluptates a voluptate. Aut illo amet voluptatibus quisquam rem earum qui cum
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi neque laboriosam eum
+                                    tempora
+                                    adipisci voluptas iusto dolor sed soluta nesciunt minima ducimus ex earum, porro non
+                                    asperiores
+                                    eveniet. Illum rem voluptatem ex omnis sapiente? Dolorem, eveniet expedita, ducimus
+                                    rerum
+                                    corrupti illo fuga aliquam maiores vel exercitationem repellendus? Quisquam
+                                    consequatur,
+                                    voluptatum, qui totam unde necessitatibus a consequuntur nisi mollitia accusantium
+                                    porro vero
+                                    numquam ab eaque laborum ullam facilis dolorum, ea voluptas ut ratione doloremque
+                                    neque facere.
+                                    Debitis ex eveniet voluptates a voluptate. Aut illo amet voluptatibus quisquam rem
+                                    earum qui cum
                                     nisi corrupti blanditiis. Molestias, tenetur? Unde voluptate at sunt. Omnis!
                                 </p>
                             </div>
@@ -203,6 +221,25 @@
                 </div>
             </div>
             <!-- ./Section Content -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header color-theme">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="fas fa-window-close white-text"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body p-0">
+                            <img src="img/imagenes/c4.jpg" class="d-block w-100 object-fit-cover" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Modal -->
+
         </section>
     </main>
     <!-- Contenido -->

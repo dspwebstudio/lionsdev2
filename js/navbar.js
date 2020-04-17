@@ -3,7 +3,6 @@ $(document).ready(function() {
     $(window).scroll(function() {
         $(this).scrollTop() > 100 ? $(".navbar").addClass("solid") : $(".navbar").removeClass("solid");
         $(this).scrollTop() > 100 ? $("header").addClass("shadow-lg") : $("header").removeClass("shadow-lg");
-        $(this).scrollTop() > 100 ? $(".hr-header").addClass("d-none") : $(".hr-header").removeClass("d-none");
         $(this).scrollTop() == 0 ? $(".footer-button-back").addClass("d-none") : $(".footer-button-back").removeClass("d-none");
     })
 });

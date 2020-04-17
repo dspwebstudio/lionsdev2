@@ -446,10 +446,6 @@ header {
   padding: 0;
 }
 
-.blog .blog-subtitle {
-  font-size: 0.8em;
-}
-
 .blog .card-img-top {
   height: 200px;
   -o-object-fit: cover;
@@ -483,6 +479,38 @@ header {
   .article .content-wrapper p {
     margin-top: 0;
   }
+}
+
+/* Articulo */
+.article .view {
+  height: 60vh;
+}
+
+.article .view img {
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.texto-articulo {
+  position: absolute;
+  top: 20vh;
+  width: 48vw;
+  left: 26vw;
+  right: 26vw;
+  height: 40vh;
+}
+
+.titulo-texto {
+  font-size: 4em;
+}
+
+.articulo-subtitle {
+  font-size: 1.5em;
+}
+
+.modal {
+  margin: auto;
 }
 
 /* Contacto */
