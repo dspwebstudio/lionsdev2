@@ -1,0 +1,352 @@
+/* VARIABLES */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap')
+
+/* general */
+// $text-theme: #0d47a0
+$text-theme: #0d47a0
+$color-theme: #0d47a0
+
+/* navbar */ 
+$bg-navbar: transparent
+$background-navbar-logo: transparent
+
+/* General CSS */
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body 
+    font-family: 'Raleway', sans-serif
+h2 
+    font-size: 36px
+h4 
+    font-size: 25px
+h5
+    font-size: 14px
+.full-screen
+    width: 100%
+    height: 100vh
+.object-fit-cover
+    object-fit: cover
+
+/* Colores */
+.color-theme 
+    background-color: $color-theme
+.text-theme
+    color: $color-theme
+.bg-light-blue-1
+    background-color: lighten($color-theme,58% )
+.bg-light-blue-2
+    background-color: lighten($color-theme,55% )
+.bg-light-blue-3
+    background-color: lighten($color-theme, 52%)
+.bg-light-blue-4
+    background-color: lighten($color-theme, 49%)
+.bg-light-blue-5
+    background-color: lighten($color-theme, 46%)
+
+.max-width
+    max-width: 1000px
+.full-screen
+    width: 100%
+    height: 100vh
+
+/* Section */
+.section-wrapper 
+    margin-top: 160px
+    .view
+        width: 100%
+        height: 30vh
+        h1 
+            text-align: center
+            margin: auto
+            font-size: 40px
+.section-img 
+    width: 100vw
+    height: 100%  
+    position: fixed
+    object-fit: cover
+    overflow: hidden
+    z-index: -1
+.hr-section-title
+    height: 3px
+    background-color: $color-theme
+    width: 200px
+    margin: 10px auto
+    transform: skew(33deg)
+.section-content
+    background-color: lighten($color-theme,60% )
+    .content-wrapper 
+        max-width: 1000px
+        margin: auto
+        padding: 60px 40px
+        p 
+            color: #263238
+            text-align: justify
+.content-h2
+    font-weight: bold
+    padding: 30px 0
+
+
+/* Logo */  
+.bg-logo
+    background-color: $background-navbar-logo
+
+/* Navbar */
+header 
+    background-color: $bg-navbar
+.navbar 
+    background-color: $bg-navbar
+    padding: 20px
+    .social-icons
+        padding: 0 auto !important
+.navbar-nav 
+    height: 60vh
+@media screen and (min-width: 768px)
+    .navbar
+        padding: 0
+    .navbar-nav 
+        height: auto
+    .nav-item
+        margin: auto
+@media screen and (min-width: 1024px)
+    .navbar
+        padding: 0
+    .nav-item
+        width: 160px
+        height: 70px
+        text-align: center
+        font-size: 1em
+        margin: auto 0
+        display: flex
+        align-items: center
+        justify-content: center
+        &:hover
+            background-color: darken($color-theme, 5%)
+.active 
+    border-bottom: 2px solid #ffffff
+.info
+    background-color: darken($color-theme, 5%)
+.txt-banner
+    color: #ffffff
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-weight: bold
+    font-size: 12px
+.flag
+    width: 30px
+    height: 20px
+@media screen and (max-width: 576px)
+    .dropdown-menu
+        background-color: $color-theme
+    .dropdown-item
+        color: #ffffff
+.solid 
+    background-color: $color-theme
+.hr-header
+    height: 2px
+    background-color: aliceblue 
+    width: 80% 
+    margin: auto
+
+/* Button */ 
+.btn 
+    border-radius: 10px
+.btn-theme
+    background-color: $color-theme
+    color: #ffffff
+    &:hover 
+        color: #ffffff
+
+/* Bienvenida */ 
+@media screen and ( min-width: 576px )
+    .slogan
+        font-size: 25px
+        margin-top: 30px
+    
+/* Index */
+.index
+    z-index: 0
+    .view
+        height: 40vh
+    .btn 
+        margin-top: 20px   
+    img 
+        object-fit: cover
+.hr-card
+    height: 3px
+    background-color: $color-theme
+    width: 200px
+    transform: skew(33deg)
+@media screen and (max-width: 576px)
+    .index
+        .view , img
+            height: 50vh
+    .btn-contacto
+
+/* Sobre Nosotros */
+.clientes
+    padding: 60px
+.carousel
+    .active 
+        border-bottom: 0
+    .carousel-item
+        width: 100%
+        height: 30vh
+    .content-img
+        width: 100%
+        height: 30vh
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: lightgray
+        .coca-cola
+            width: 200px
+            position: relative
+            top: 0
+@media screen and (min-width: 768px)
+    .about
+        .img-title
+            position: relative
+            top: 0 px
+    .clientes
+        padding: 40px
+        height: 50vh
+        .carousel
+            margin-top: 60px
+            width: 100%
+            height: 20vh
+            display: flex
+            align-items: center
+            justify-content: center
+            .content-img
+                width: 100%
+                .susimpatica
+                    width: 200px
+                .adidas
+                    width: 100px
+                .coca-cola
+                    width: 200px
+@media screen and (max-width: 768px)
+    .about
+        .img-title
+            position: relative
+            top: 0
+    .content-img
+        width: 100%
+        height: 100vh
+        margin: auto
+
+        .susimpatica
+            width: 200px
+        .adidas
+            width: 100px
+        .coca-cola
+            width: 200px
+            position: relative
+            top: -70px
+@media screen and (min-width: 1280px)
+    .about
+        .img-title
+            position: relative
+            top: 0
+    .content-img
+        width: 100%
+        margin: auto
+
+        .susimpatica
+            width: 200px
+        .adidas
+            width: 100px
+        .coca-cola
+            width: 200px
+            position: relative
+            top: -70px
+    .about 
+        .section-img
+            width: 100%
+            height: 100vh
+            position: absolute
+            top: -300px
+/* Servicios */
+.services 
+    
+    .card-title
+        padding-top: 10px
+        color: $color-theme
+        text-align: center
+    .responsivo
+        img 
+            width: 100%
+            height: 100%
+            object-fit: cover
+    .card-text 
+        padding: 20px
+.fab 
+    padding: 20px 0
+/* Clientes */
+.clientes
+    min-height: 60vh
+    
+/* Blog */  
+.blog
+    .card-body
+        padding: 1.875rem
+    p 
+        padding: 0
+    .blog-subtitle
+        font-size: 0.8em
+
+    .card-img-top
+        height: 200px
+        object-fit: cover
+.article 
+    .blog-subtitle
+        font-size: 1.25rem
+        .author, .date
+            margin-right: 1.25rem !important
+    .content-wrapper
+        min-height: 24vh
+        p 
+            margin-top: 60px
+.pagination.pg-blue .page-item .page-link
+    font-size: 1.2em
+@media screen and (min-width: 576px)
+    .article
+        .content-wrapper
+            padding-top: 5rem
+            p
+                margin-top: 0
+
+/* Contacto */ 
+#message
+    min-height: 146px
+    max-height: 146px
+@media screen and (min-width: 576px)
+    .contact
+        .section-img 
+            position: fixed
+            top: 0
+.contact-information
+    height: 65vh
+.pregunta-contacto
+    font-size: 1.25rem
+    font-weight: bold
+    text-align: center
+
+/* Footer */
+footer
+    .footer-hr 
+        height: 0.1875rem
+        background-color: #ffffff
+        width: 12.5rem
+        margin: auto
+        transform: skew(33deg)
+    @media screen and (min-width: 576px)
+        .footer-hr 
+            margin: 0
+    .mensaje 
+        font-size: 1.125rem
+    .footer-link 
+        font-size: 1.125rem
+    .fab
+        font-size: 2.5rem
