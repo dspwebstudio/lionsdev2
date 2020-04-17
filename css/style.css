@@ -38,31 +38,31 @@ h5 {
 
 /* Colores */
 .color-theme {
-  background-color: #0d47a0;
+  background-color: #124880;
 }
 
 .text-theme {
-  color: #0d47a0;
+  color: #124880;
 }
 
 .bg-light-blue-1 {
-  background-color: #d9e7fc;
+  background-color: #c3dcf7;
 }
 
 .bg-light-blue-2 {
-  background-color: #cbdefb;
+  background-color: #b6d5f5;
 }
 
 .bg-light-blue-3 {
-  background-color: #bdd5fa;
+  background-color: #a8cdf3;
 }
 
 .bg-light-blue-4 {
-  background-color: #aeccf8;
+  background-color: #9bc5f1;
 }
 
 .bg-light-blue-5 {
-  background-color: #a0c3f7;
+  background-color: #8ebdef;
 }
 
 .max-width {
@@ -102,7 +102,7 @@ h5 {
 
 .hr-section-title {
   height: 3px;
-  background-color: #0d47a0;
+  background-color: #124880;
   width: 200px;
   margin: 10px auto;
   -webkit-transform: skew(33deg);
@@ -110,7 +110,7 @@ h5 {
 }
 
 .section-content {
-  background-color: #e2edfd;
+  background-color: #cce2f8;
 }
 
 .section-content .content-wrapper {
@@ -152,6 +152,10 @@ header {
   height: 60vh;
 }
 
+.text-navbar {
+  color: red;
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
     padding: 0;
@@ -185,7 +189,7 @@ header {
             justify-content: center;
   }
   .nav-item:hover {
-    background-color: #0b3d88;
+    background-color: #0f3b6a;
   }
 }
 
@@ -194,7 +198,7 @@ header {
 }
 
 .info {
-  background-color: #0b3d88;
+  background-color: #0f3b6a;
 }
 
 .txt-banner {
@@ -211,7 +215,7 @@ header {
 
 @media screen and (max-width: 576px) {
   .dropdown-menu {
-    background-color: #0d47a0;
+    background-color: #124880;
   }
   .dropdown-item {
     color: #ffffff;
@@ -219,7 +223,7 @@ header {
 }
 
 .solid {
-  background-color: #0d47a0;
+  background-color: #124880;
 }
 
 .hr-header {
@@ -235,7 +239,7 @@ header {
 }
 
 .btn-theme {
-  background-color: #0d47a0;
+  background-color: #124880;
   color: #ffffff;
 }
 
@@ -271,7 +275,7 @@ header {
 
 .hr-card {
   height: 3px;
-  background-color: #0d47a0;
+  background-color: #124880;
   width: 200px;
   -webkit-transform: skew(33deg);
           transform: skew(33deg);
@@ -409,7 +413,7 @@ header {
 /* Servicios */
 .services .card-title {
   padding-top: 10px;
-  color: #0d47a0;
+  color: #124880;
   text-align: center;
 }
 
