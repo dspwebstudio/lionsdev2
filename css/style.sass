@@ -1,19 +1,21 @@
-/* VARIABLES */
+
+/*-------------------- VARIABLES --------------------*/
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap')
 
-/* general */
+/* General */
 // $text-theme: #0d47a0
 $text-theme: #326B80
 //$text-theme: #326B80 // verde azul
 $text-theme: #124880 // verde azul
 $color-theme: #124880
 
-/* navbar */ 
+/* Navbar */ 
 $bg-navbar: transparent
 $background-navbar-logo: transparent
 $text-navbar: red
 
-/* General CSS */
+/*-------------- GENERAL CSS --------------*/
+
 *
     margin: 0
     padding: 0
@@ -31,8 +33,16 @@ h5
     height: 100vh
 .object-fit-cover
     object-fit: cover
+.fab 
+    padding: 20px 0
+.max-width
+    max-width: 1000px
+.full-screen
+    width: 100%
+    height: 100vh
 
-/* Colores */
+/*--------------- COLORES ---------------*/
+
 .color-theme 
     background-color: $color-theme
 .text-theme
@@ -48,13 +58,9 @@ h5
 .bg-light-blue-5
     background-color: lighten($color-theme, 46%)
 
-.max-width
-    max-width: 1000px
-.full-screen
-    width: 100%
-    height: 100vh
+/*------------------ SECTION ------------------*/
 
-/* Section */
+/* General Section CSS */
 .section-wrapper 
     margin-top: 160px
     .view
@@ -91,11 +97,15 @@ h5
     padding: 30px 0
 
 
-/* Logo */  
+/*-------------------- LOGO --------------------*/  
+
+/* General Logo CSS */
 .bg-logo
     background-color: $background-navbar-logo
 
-/* Navbar */
+/*------------------- NAVBAR -------------------*/
+
+/* General Navbar CSS */
 header 
     background-color: $bg-navbar
 .navbar 
@@ -107,28 +117,6 @@ header
     height: 60vh
 .text-navbar
     color: $text-navbar
-@media screen and (min-width: 768px)
-    .navbar
-        padding: 0
-    .navbar-nav 
-        height: 75vh
-    .nav-item
-        margin: auto
-@media screen and (min-width: 1024px)
-    .navbar
-        padding: 0
-    .nav-item
-        width: 160px
-        height: 70px
-        text-align: center
-        font-size: 1em
-        margin: auto 0
-        display: flex
-        align-items: center
-        justify-content: center
-        &:hover
-            background-color: darken($color-theme, 5%)
-
 .active 
     border-bottom: 2px solid #ffffff
 .info
@@ -141,13 +129,6 @@ header
 .flag
     width: 30px
     height: 20px
-.navbar-nav
-    height: auto
-@media screen and (max-width: 576px)
-    .dropdown-menu
-        background-color: $color-theme
-    .dropdown-item
-        color: #ffffff
 .solid 
     background-color: $color-theme
 .hr-header
@@ -155,8 +136,40 @@ header
     background-color: aliceblue 
     width: 80% 
     margin: auto
+/* Navbar Media Queries */
+@media screen and (min-width: 768px)
+    .navbar
+        padding: 0
+    .navbar-nav 
+        height: 75vh
+    .nav-item
+        margin: auto
+@media screen and (min-width: 1024px)
+    .navbar
+        padding: 0
+    .navbar-nav
+        height: auto
+    .nav-item
+        width: 150px
+        height: 70px
+        text-align: center
+        font-size: 1em
+        margin: auto 0
+        display: flex
+        align-items: center
+        justify-content: center
+        &:hover
+            background-color: darken($color-theme, 5%)
+@media screen and (max-width: 576px)
+    .dropdown-menu
+        background-color: $color-theme
+    .dropdown-item
+        color: #ffffff
 
-/* Button */ 
+
+/*-------------------- BUTTON --------------------*/ 
+
+/* General Button CSS */
 .btn 
     border-radius: 10px
 .btn-theme
@@ -165,13 +178,19 @@ header
     &:hover 
         color: #ffffff
 
-/* Bienvenida */ 
+/*------------------ BIENVENIDA ------------------*/ 
+
+/* General Bienvenida CSS */
+
+/* Bienvenida Media Queries */
 @media screen and ( min-width: 576px )
     .slogan
         font-size: 25px
         margin-top: 30px
     
-/* Index */
+/*----------------- INDEX -----------------*/
+
+/* General Index CSS */
 .index
     z-index: 0
     .view
@@ -186,13 +205,18 @@ header
     background-color: $color-theme
     width: 200px
     transform: skew(33deg)
+
+/* Index Media Queries */
 @media screen and (max-width: 576px)
     .index
         .view , img
             height: 50vh
     .btn-contacto
 
-/* Sobre Nosotros */
+
+/*------------ SOBRE NOSOTROS ------------*/
+
+/*  Sobre Nosotros General CSS */
 .clientes
     padding: 60px
 .carousel
@@ -212,6 +236,8 @@ header
             width: 200px
             position: relative
             top: 0
+
+/* Carousel Clientes Media Queries */
 @media screen and (min-width: 768px)
     .about
         .img-title
@@ -276,9 +302,12 @@ header
             height: 100vh
             position: absolute
             top: -300px
-/* Servicios */
+
+
+/*-------------- SERVICIOS --------------*/
+
+/*  Servicios General CSS */
 .services 
-    
     .card-title
         padding-top: 10px
         color: $color-theme
@@ -290,13 +319,15 @@ header
             object-fit: cover
     .card-text 
         padding: 20px
-.fab 
-    padding: 20px 0
+
 /* Clientes */
 .clientes
     min-height: 60vh
-    
-/* Blog */  
+
+
+/*---------------- BLOG ----------------*/
+
+/* Blog General CSS */
 .blog
     .card-body
         padding: 1.875rem
@@ -317,6 +348,8 @@ header
             margin-top: 60px
 .pagination.pg-blue .page-item .page-link
     font-size: 1.2em
+
+/* Articulo Media Queries */
 @media screen and (min-width: 576px)
     .article
         .content-wrapper
@@ -324,7 +357,10 @@ header
             p
                 margin-top: 0
 
-/* Articulo */  
+
+/*----------- ARTICULO -----------*/
+
+/* Articulo General CSS */
 .article
     .view
         height: 60vh
@@ -340,19 +376,21 @@ header
     height: 40vh
 .titulo-texto 
     font-size: 4em
-
 .articulo-subtitle
     font-size: 1.5em
-
 .modal 
     margin: auto
 
 
 
-/* Contacto */ 
+/*-------------- CONTACTO --------------*/
+
+/* Contacto General CSS */
 #message
     min-height: 146px
     max-height: 146px
+
+/* Contacto Media Queries */
 @media screen and (min-width: 576px)
     .contact
         .section-img 
@@ -365,7 +403,9 @@ header
     font-weight: bold
     text-align: center
 
-/* Footer */
+/*----------- FOOTER -----------*/
+
+/* Footer General CSS */
 footer
     .footer-hr 
         height: 0.1875rem
@@ -381,4 +421,4 @@ footer
     .footer-link 
         font-size: 1.125rem
     .fab
-        font-size: 2.5rem
+        font-size: 40px
