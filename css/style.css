@@ -78,62 +78,6 @@ h5 {
   background-color: #8ebdef;
 }
 
-/*------------------ SECTION ------------------*/
-/* General Section CSS */
-.section-wrapper {
-  margin-top: 160px;
-}
-
-.section-wrapper .view {
-  width: 100%;
-  height: 30vh;
-}
-
-.section-wrapper .view h1 {
-  text-align: center;
-  margin: auto;
-  font-size: 40px;
-}
-
-.section-img {
-  width: 100vw;
-  height: 100%;
-  position: fixed;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.hr-section-title {
-  height: 3px;
-  background-color: #124880;
-  width: 200px;
-  margin: 10px auto;
-  -webkit-transform: skew(33deg);
-          transform: skew(33deg);
-}
-
-.section-content {
-  background-color: #cce2f8;
-}
-
-.section-content .content-wrapper {
-  max-width: 1000px;
-  margin: auto;
-  padding: 60px 40px;
-}
-
-.section-content .content-wrapper p {
-  color: #263238;
-  text-align: justify;
-}
-
-.content-h2 {
-  font-weight: bold;
-  padding: 30px 0;
-}
-
 /*-------------------- LOGO --------------------*/
 /* General Logo CSS */
 .bg-logo {
@@ -534,27 +478,36 @@ header {
 
 /*-------------- CONTACTO --------------*/
 /* Contacto General CSS */
-#message {
-  min-height: 146px;
-  max-height: 146px;
+.section-content__pregunta-contacto {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.section-content__map-container {
+  height: 40vh;
+}
+
+.md-textarea {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.form-label {
+  font-size: 1em;
 }
 
 /* Contacto Media Queries */
 @media screen and (min-width: 576px) {
-  .contact .section-img {
-    position: fixed;
-    top: 0;
+  .section-content__pregunta-contacto {
+    font-size: 25px;
   }
 }
 
-.contact-information {
-  height: 65vh;
-}
-
-.pregunta-contacto {
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-align: center;
+@media screen and (min-width: 776px) {
+  .contact .section-img {
+    position: fixed;
+    top: -200px;
+  }
 }
 
 /*----------- FOOTER -----------*/
@@ -584,5 +537,66 @@ footer .footer-link {
 
 footer .fab {
   font-size: 40px;
+}
+
+/*------------------ SECTION ------------------*/
+/* General Section CSS */
+.main {
+  margin-top: 160px;
+}
+
+.main .view {
+  width: 100%;
+  height: 30vh;
+}
+
+.main .view h1 {
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+}
+
+.section-img {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hr-section-title {
+  height: 3px;
+  background-color: #124880;
+  width: 200px;
+  margin: 10px auto;
+  -webkit-transform: skew(33deg);
+          transform: skew(33deg);
+}
+
+.section-content .content-wrapper {
+  margin: auto;
+  padding: 60px 40px;
+}
+
+.section-content .content-wrapper p {
+  color: #263238;
+  text-align: justify;
+}
+
+.content-h2 {
+  font-weight: bold;
+  padding: 30px 0;
+}
+
+/* Section Media Queries */
+@media screen and (min-width: 576px) {
+  .section-wrapper .view {
+    height: 50vh;
+  }
+  .section-wrapper .section-image {
+    height: 50vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
