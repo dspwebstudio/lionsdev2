@@ -161,7 +161,7 @@ header {
     padding: 0;
   }
   .navbar-nav {
-    height: auto;
+    height: 75vh;
   }
   .nav-item {
     margin: auto;
@@ -211,6 +211,10 @@ header {
 .flag {
   width: 30px;
   height: 20px;
+}
+
+.navbar-nav {
+  height: auto;
 }
 
 @media screen and (max-width: 576px) {

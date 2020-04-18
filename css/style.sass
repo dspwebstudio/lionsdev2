@@ -111,7 +111,7 @@ header
     .navbar
         padding: 0
     .navbar-nav 
-        height: auto
+        height: 75vh
     .nav-item
         margin: auto
 @media screen and (min-width: 1024px)
@@ -128,6 +128,7 @@ header
         justify-content: center
         &:hover
             background-color: darken($color-theme, 5%)
+
 .active 
     border-bottom: 2px solid #ffffff
 .info
@@ -140,6 +141,8 @@ header
 .flag
     width: 30px
     height: 20px
+.navbar-nav
+    height: auto
 @media screen and (max-width: 576px)
     .dropdown-menu
         background-color: $color-theme
