@@ -12,20 +12,20 @@
     <!-- MDB icon -->
     <!-- <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon"> -->
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="dist/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="dist/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/img/favicon/favicon-32x32.png">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="dist/css/mdb.min.css">
     <!-- Your custom styles (optional) -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                 <i class="far fa-clock ml-2 mr-1"></i><span id="time"></span>
             </div>
             <div class="ml-auto d-flex">
-                <img class="img-fluid flag" src="img/imagenes/mexico-flag.png" alt="mexico flag" />
+                <img class="img-fluid flag" src="dist/img/imagenes/mexico-flag.png" alt="mexico flag" />
                 <a href="tel:+524433470722" class="txt-banner">
                     <i class="fas fa-phone ml-2 d-flex">
                         <p class="ml-1 txt-banner">4433470722</p>
@@ -55,7 +55,7 @@
             <!-- Logo -->
             <div class="logo bg-logo px-5 py-3 text-center">
                 <a class="navbar-brand" href="index.html">
-                    <img src="img/logo/lionsdev-white.png" alt="logo" width="180">
+                    <img src="dist/img/logo/lionsdev-white.png" alt="logo" width="180">
                 </a>
             </div>
             <button class="navbar-toggler d-lg-none p-3" type="button" data-toggle="collapse"
@@ -122,7 +122,7 @@
             <!-- Section Title -->
             <div class="view">
                 <div class="section-img d-block w-100">
-                    <img src="img/imagenes/welcome.jpeg" class="img-fluid w-100" alt="" srcset="">
+                    <img src="dist/img/imagenes/welcome.jpeg" class="img-fluid w-100" alt="" srcset="">
                 </div>
                 <div class="mask rgba-stylish-strong section-title d-flex align-items-center justify-content-center">
                     <div class="white-text text-justify">
@@ -138,7 +138,7 @@
 
                 <!-- Necesidades -->
                 <div id="necesidades"class="bg-light-blue-1">
-                    <div class="content-wrapper">
+                    <div class="content-wrapper max-width">
                         <h2 id="nuestros-servicios" class="h2-responsive text-theme text-center content-h2 pb-5">
                             Nuestros Servicios</h2>
                         <p class="text-justify">En la actualidad las empresas requieren enfocarse en dar a
@@ -203,10 +203,12 @@
                         <!-- ./Tarjetas -->
                     </div>
                 </div>
+                <!-- ./Necesidades -->
+
 
                 <!-- ¿Que ofrecemos? -->
                 <div id="que-ofrecemos" class="bg-light-blue-2">
-                    <div class="content-wrapper">
+                    <div class="content-wrapper max-width">
                         <h2 class="h2-responsive text-theme text-center content-h2 pb-5">¿Qué ofrecemos? </h2>
 
                         <!-- Páginas Responsivas -->
@@ -214,7 +216,7 @@
                             <div class="container-fluid">
                                 <div class="row p-0">
                                     <div class="col-md-5 p-0">
-                                        <img src="img/imagenes/responsivo.jpeg" alt="">
+                                        <img src="dist/img/imagenes/responsivo.jpeg" alt="">
                                     </div>
                                     <div class="col-md-7 p-5 white ">
                                         <h2 class="h2-responsive text-theme">Páginas Responsivas</h2>
@@ -236,7 +238,7 @@
                             <div class="container-fluid">
                                 <div class="row p-0">
                                     <div class="col-md-5 p-0">
-                                        <img src="img/imagenes/c11.jpeg" alt="">
+                                        <img src="dist/img/imagenes/c11.jpeg" alt="">
                                     </div>
                                     <div class="col-md-7 p-5 white ">
                                         <h2 class="h2-responsive text-theme">Optimización de SEO</h2>
@@ -261,7 +263,7 @@
 
                 <!-- ¿Como lo logramos? -->
                 <div id="como-logramos" class="bg-light-blue-3">
-                    <div class="content-wrapper">
+                    <div class="content-wrapper max-width">
                         <h2 class="h2-responsive text-theme text-center content-h2 pb-5">¿Como lo logramos? </h2>
 
                         <!-- Tecnologias -->
@@ -356,27 +358,23 @@
     <!-- Footer -->
     <footer class="page-footer font-small pt-4 color-theme">
 
-        <!-- Footer Menú -->
+        <!-- Footer Menu -->
         <div class="container-fluid text-center text-md-left">
 
-            <!-- Grid row -->
+            <!-- Bloque 1 -->
             <div class="row p-3">
 
-                <!-- Grid column -->
+                <!-- Content -->
                 <div class="col-md-4 mt-md-0 mt-3">
-
-                    <!-- Content -->
                     <h5 class="h5-responsive text-uppercase font-weight-bold">lionsdevstudio</h5>
                     <hr class="footer-hr">
                     <p class="mensaje my-5">Donde nosotros damos a conocer tu negocio en la red.</p>
-
                 </div>
-                <!-- Grid column -->
+                <!-- Content -->
+                
 
-                <!-- Menú -->
+                <!-- Menu -->
                 <div class="col-md-4 mb-md-0 mb-3">
-
-                    <!-- Menú -->
                     <h5 class="h5-responsive text-uppercase font-weight-bold">Menú</h5>
                     <hr class="footer-hr">
                     <ul class="list-unstyled">
@@ -396,9 +394,8 @@
                             <a class="footer-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
-
                 </div>
-                <!-- ./Menú -->
+                <!-- ./Menu -->
 
                 <!-- Social Icons -->
                 <div class="col-md-4 mb-md-0 mb-3 d-flex align-items-center justify-content-center">
@@ -425,20 +422,16 @@
                 </div>
                 <!-- ./Social Icons -->
 
-
             </div>
-            <!-- Grid row -->
+            <!-- Bloque 1 -->
 
         </div>
-        <!-- Footer Menú -->
-
-
-        <!----------------------- NO TOCAR  ------------------------------->
+        <!-- Footer Menu -->
 
         <!-- Derechos Reservados -->
         <div class="footer-copyright text-center py-3">© 2020 Derechos Reservados:
             <a href="index.html">
-                <img src="img/logo/lionsdev-white.png" alt="logo" width="80" class="ml-1">
+                <img src="dist/img/logo/lionsdev-white.png" alt="logo" width="80" class="ml-1">
             </a>
         </div>
         <!-- Derechos Reservados -->
@@ -447,29 +440,29 @@
     <!-- Footer -->
 
     <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="dist/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="dist/js/mdb.min.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <!-- preloader -->
-    <script type="text/javascript" src="js/loader.js"></script>
+    <script type="text/javascript" src="dist/js/loader.js"></script>
     <!-- Date & Time -->
-    <script type="text/javascript" src="js/datetime.js"></script>
+    <script type="text/javascript" src="dist/js/datetime.js"></script>
     <!-- SmoothScroll -->
-    <script src="js/smooth-scroll.js"></script>
+    <script src="dist/js/smooth-scroll.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
     <!-- Navbar -->
-    <script src="js/navbar.js"></script>
+    <script src="dist/js/navbar.js"></script>
 
 
 </body>
