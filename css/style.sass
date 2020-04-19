@@ -103,7 +103,7 @@ header
     .navbar
         padding: 0
     .navbar-nav 
-        height: 75vh
+        height: 72vh
     .nav-item
         margin: auto
 @media screen and (min-width: 1024px)
@@ -113,7 +113,7 @@ header
         height: auto
     .nav-item
         width: 150px
-        height: 70px
+        height: 75px
         text-align: center
         font-size: 1em
         margin: auto 0
@@ -272,6 +272,8 @@ header
             top: -300px
     .clientes
         height: auto
+
+
 /*-------------- SERVICIOS --------------*/
 
  /*  Servicios General CSS */
@@ -351,7 +353,12 @@ header
         font-size: 20px
         text-align: justify
     &__map-container
+        padding: 0
+        margin: 0
         height: 40vh
+        .g-maps
+            width: 100%
+            height: 40vh
 
 .md-textarea
     min-height: 200px
@@ -368,7 +375,7 @@ header
     .contact
         .section-img 
             position: fixed
-            top: -200px
+            top: -300
 
 
 /*----------- FOOTER -----------*/
@@ -404,8 +411,8 @@ footer
             margin: auto
             font-size: 40px
 .section-img 
-    width: 100vw
-    height: 100vh  
+    width: 100%
+    height: 100%
     position: fixed
     object-fit: cover
     overflow: hidden
@@ -426,11 +433,3 @@ footer
 .content-h2
     font-weight: bold
     padding: 30px 0
-
-/* Section Media Queries */
-@media screen and (min-width: 576px) //section wrapper
-    .section-wrapper
-        .view
-            height: 50vh
-        .section-image
-            height: 50vh
