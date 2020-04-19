@@ -413,24 +413,16 @@ header {
      object-fit: cover;
 }
 
-.article .blog-subtitle {
-  font-size: 1.25rem;
+.blog .blog-subtitle {
+  font-size: 0.8rem;
 }
 
-.article .blog-subtitle .author, .article .blog-subtitle .date {
-  margin-right: 1.25rem !important;
-}
-
-.article .content-wrapper {
+.blog .content-wrapper {
   min-height: 24vh;
 }
 
-.article .content-wrapper p {
+.blog .content-wrapper p {
   margin-top: 60px;
-}
-
-.pagination.pg-blue .page-item .page-link {
-  font-size: 1.2em;
 }
 
 /* Articulo Media Queries */
@@ -469,7 +461,7 @@ header {
 }
 
 .articulo-subtitle {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .modal {
