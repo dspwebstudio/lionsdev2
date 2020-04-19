@@ -332,13 +332,16 @@ header {
     height: 100vh;
     margin: auto;
   }
-  .content-img .susimpatica {
+  .clientes {
+    height: auto;
+  }
+  .clientes .susimpatica {
     width: 200px;
   }
-  .content-img .adidas {
+  .clientes .adidas {
     width: 100px;
   }
-  .content-img .coca-cola {
+  .clientes .coca-cola {
     width: 200px;
     position: relative;
     top: -70px;
@@ -370,6 +373,9 @@ header {
     height: 100vh;
     position: absolute;
     top: -300px;
+  }
+  .clientes {
+    height: auto;
   }
 }
 
