@@ -1,9 +1,44 @@
-/*-------------------- VARIABLES --------------------*/
+/*================== VARIABLES ==================*/
+/*==================== COLORES ====================*/
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-/* General */
-/* Navbar */
-/*-------------- GENERAL CSS --------------*/
-* {
+.color-theme {
+  background-color: #124880;
+}
+
+.text-theme {
+  color: #124880;
+}
+
+.bg-light-blue-1 {
+  background-color: #c3dcf7;
+}
+
+.bg-light-blue-2 {
+  background-color: #b6d5f5;
+}
+
+.bg-light-blue-3 {
+  background-color: #a8cdf3;
+}
+
+.bg-light-blue-4 {
+  background-color: #9bc5f1;
+}
+
+.bg-light-blue-5 {
+  background-color: #8ebdef;
+}
+
+.bg-light-blue-6 {
+  background-color: #80b6ed;
+}
+
+.bg-light-blue-7 {
+  background-color: #73aeeb;
+}
+
+/*================== GENERAL CSS ==================*/
+*, *::after, *::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -42,51 +77,92 @@ h5 {
 
 .max-width {
   max-width: 1000px;
+  margin: auto;
 }
 
-.full-screen {
+/*=================== SECTION ===================*/
+/* General Section CSS */
+.main {
+  margin-top: 160px;
+}
+
+.main .view {
+  width: 100%;
+  height: 30vh;
+}
+
+@media screen and (min-width: 576px) {
+  .main .view {
+    height: 40vh;
+  }
+}
+
+.main .view h1 {
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .main .view h1 {
+    font-size: 30px;
+  }
+}
+
+.section-img {
   width: 100%;
   height: 100vh;
+  position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  z-index: -1;
 }
 
-/*--------------- COLORES ---------------*/
-.color-theme {
+.hr-section-title {
+  height: 3px;
+  background-color: #124880;
+  width: 200px;
+  margin: 10px auto;
+  -webkit-transform: skew(33deg);
+          transform: skew(33deg);
+}
+
+.section-content .content-wrapper {
+  margin: auto;
+  padding: 60px 40px;
+}
+
+.section-content .content-wrapper p {
+  color: #263238;
+  text-align: justify;
+}
+
+.content-h2 {
+  font-weight: bold;
+  padding: 30px 0;
+}
+
+/*======================= BUTTON =======================*/
+.btn {
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.btn:hover {
+  color: #ffffff;
+}
+
+.btn-theme {
   background-color: #124880;
 }
 
-.text-theme {
-  color: #124880;
-}
-
-.bg-light-blue-1 {
-  background-color: #c3dcf7;
-}
-
-.bg-light-blue-2 {
-  background-color: #b6d5f5;
-}
-
-.bg-light-blue-3 {
-  background-color: #a8cdf3;
-}
-
-.bg-light-blue-4 {
-  background-color: #9bc5f1;
-}
-
-.bg-light-blue-5 {
-  background-color: #8ebdef;
-}
-
-/*-------------------- LOGO --------------------*/
-/* General Logo CSS */
-.bg-logo {
+/* =========================== HEADER ============================= */
+header {
   background-color: transparent;
 }
 
-/*------------------- NAVBAR -------------------*/
-/* General Navbar CSS */
-header {
+.bg-logo {
   background-color: transparent;
 }
 
@@ -95,12 +171,64 @@ header {
   padding: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    padding: 0;
+  }
+}
+
 .navbar .social-icons {
   padding: 0 auto !important;
 }
 
 .navbar-nav {
   height: 60vh;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+    height: 72vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-nav {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-item {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-item {
+    width: 150px;
+    height: 75px;
+    text-align: center;
+    font-size: 1em;
+    margin: auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav-item:hover {
+    background-color: #0f3b6a;
+  }
 }
 
 .text-navbar {
@@ -138,74 +266,19 @@ header {
   margin: auto;
 }
 
-/* Navbar Media Queries */
-@media screen and (min-width: 768px) {
-  .navbar {
-    padding: 0;
-  }
-  .navbar-nav {
-    height: 72vh;
-  }
-  .nav-item {
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .navbar {
-    padding: 0;
-  }
-  .navbar-nav {
-    height: auto;
-  }
-  .nav-item {
-    width: 150px;
-    height: 75px;
-    text-align: center;
-    font-size: 1em;
-    margin: auto 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .nav-item:hover {
-    background-color: #0f3b6a;
-  }
-}
-
 @media screen and (max-width: 576px) {
   .dropdown-menu {
     background-color: #124880;
   }
+}
+
+@media screen and (max-width: 576px) {
   .dropdown-item {
     color: #ffffff;
   }
 }
 
-/*-------------------- BUTTON --------------------*/
-/* General Button CSS */
-.btn {
-  border-radius: 10px;
-}
-
-.btn-theme {
-  background-color: #124880;
-  color: #ffffff;
-}
-
-.btn-theme:hover {
-  color: #ffffff;
-}
-
-/*------------------ BIENVENIDA ------------------*/
-/* General Bienvenida CSS */
-/* Bienvenida Media Queries */
+/*==================== BIENVENIDA ====================*/
 @media screen and (min-width: 576px) {
   .slogan {
     font-size: 25px;
@@ -213,65 +286,48 @@ header {
   }
 }
 
-/*----------------- INDEX -----------------*/
-/* General Index CSS */
-.index {
-  z-index: 0;
-}
-
-.index .view {
-  height: 40vh;
-}
-
-.index .btn {
-  margin-top: 20px;
-}
-
-.index img {
-  height: 40vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.hr-card {
-  height: 3px;
-  background-color: #124880;
-  width: 200px;
-  -webkit-transform: skew(33deg);
-          transform: skew(33deg);
-}
-
-/* Index Media Queries */
-@media screen and (max-width: 576px) {
-  .index .view, .index img {
-    height: 50vh;
+/*==================== SOBRE NOSOTROS ====================*/
+@media screen and (max-width: 768px) {
+  .about .img-title {
+    position: relative;
+    top: 0;
   }
 }
 
-/*------------ SOBRE NOSOTROS ------------*/
-/*  Sobre Nosotros General CSS */
+@media screen and (min-width: 768px) {
+  .about .img-title {
+    position: relative;
+    top: 0 px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about .img-title {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about .section-img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -300px;
+  }
+}
+
+/*========================== CLIENTES ==========================*/
 .clientes {
-  padding: 60px;
-  min-height: 60vh;
+  width: 100%;
+  padding: 40px;
   margin: auto;
 }
 
 .carousel {
   margin: auto;
-}
-
-.carousel .active {
-  border-bottom: 0;
-}
-
-.carousel .carousel-item {
   width: 100%;
-  height: 30vh;
-}
-
-.carousel .content-img {
-  width: 100%;
-  height: 30vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,112 +337,61 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: lightgray;
 }
 
-.carousel .content-img .coca-cola {
+.carousel .active {
+  border-bottom: 0;
+}
+
+.carousel .carousel-item {
+  width: 100%;
+}
+
+.carousel .content-img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #9fc8f2;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.carousel .content-img .susimpatica {
   width: 200px;
-  position: relative;
-  top: 0;
 }
 
-/* Carousel Clientes Media Queries */
-@media screen and (min-width: 768px) {
-  .about .img-title {
-    position: relative;
-    top: 0 px;
-  }
-  .clientes {
-    padding: 40px;
-    height: 50vh;
-  }
-  .clientes .carousel {
-    margin-top: 60px;
-    width: 100%;
-    height: 20vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .clientes .carousel .content-img {
-    width: 100%;
-  }
-  .clientes .carousel .content-img .susimpatica {
-    width: 200px;
-  }
-  .clientes .carousel .content-img .adidas {
-    width: 100px;
-  }
-  .clientes .carousel .content-img .coca-cola {
-    width: 200px;
-  }
+.carousel .content-img .adidas {
+  width: 100px;
 }
 
 @media screen and (max-width: 768px) {
-  .about .img-title {
+  .carousel .content-img .coca-cola {
+    width: 200px;
     position: relative;
     top: 0;
   }
-  .content-img {
-    width: 100%;
-    height: 100vh;
-    margin: auto;
-  }
-  .clientes {
-    height: auto;
-  }
-  .clientes .susimpatica {
+}
+
+@media screen and (min-width: 768px) {
+  .carousel .content-img .coca-cola {
     width: 200px;
-  }
-  .clientes .adidas {
-    width: 100px;
-  }
-  .clientes .coca-cola {
-    width: 200px;
-    position: relative;
-    top: -70px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .about .img-title {
-    position: relative;
-    top: 0;
-  }
-  .content-img {
-    width: 100%;
-    margin: auto;
-  }
-  .content-img .susimpatica {
+  .carousel .content-img .coca-cola {
     width: 200px;
-  }
-  .content-img .adidas {
-    width: 100px;
-  }
-  .content-img .coca-cola {
-    width: 200px;
-    position: relative;
-    top: -70px;
-  }
-  .about .section-img {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: -300px;
-  }
-  .clientes {
-    height: auto;
   }
 }
 
-/*-------------- SERVICIOS --------------*/
-/*  Servicios General CSS */
+/*===================== SERVICIOS =====================*/
 .services .card-title {
   padding-top: 10px;
   color: #124880;
@@ -405,15 +410,6 @@ header {
 }
 
 /*---------------- BLOG ----------------*/
-/* Blog General CSS */
-.blog .card-body {
-  padding: 1.875rem;
-}
-
-.blog p {
-  padding: 0;
-}
-
 .blog .card-img-top {
   height: 200px;
   -o-object-fit: cover;
@@ -426,20 +422,12 @@ header {
 
 .blog .content-wrapper {
   min-height: 24vh;
+  padding: 1.875rem;
 }
 
 .blog .content-wrapper p {
   margin-top: 60px;
-}
-
-/* Articulo Media Queries */
-@media screen and (min-width: 576px) {
-  .article .content-wrapper {
-    padding-top: 5rem;
-  }
-  .article .content-wrapper p {
-    margin-top: 0;
-  }
+  padding: 10px 0;
 }
 
 /*----------- ARTICULO -----------*/
@@ -475,11 +463,30 @@ header {
   margin: auto;
 }
 
-/*-------------- CONTACTO --------------*/
-/* Contacto General CSS */
+/*==================== CONTACTO ====================*/
+@media screen and (min-width: 776px) {
+  .contact .section-img {
+    position: fixed;
+    top: -100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact .section-img {
+    position: fixed;
+    top: 0;
+  }
+}
+
 .section-content__pregunta-contacto {
   font-size: 20px;
   text-align: justify;
+}
+
+@media screen and (min-width: 576px) {
+  .section-content__pregunta-contacto {
+    font-size: 25px;
+  }
 }
 
 .section-content__map-container {
@@ -503,21 +510,7 @@ header {
 }
 
 /* Contacto Media Queries */
-@media screen and (min-width: 576px) {
-  .section-content__pregunta-contacto {
-    font-size: 25px;
-  }
-}
-
-@media screen and (min-width: 776px) {
-  .contact .section-img {
-    position: fixed;
-    top: -300;
-  }
-}
-
-/*----------- FOOTER -----------*/
-/* Footer General CSS */
+/*===================== FOOTER =====================*/
 footer .footer-hr {
   height: 0.1875rem;
   background-color: #ffffff;
@@ -543,56 +536,5 @@ footer .footer-link {
 
 footer .fab {
   font-size: 40px;
-}
-
-/*------------------ SECTION ------------------*/
-/* General Section CSS */
-.main {
-  margin-top: 160px;
-}
-
-.main .view {
-  width: 100%;
-  height: 30vh;
-}
-
-.main .view h1 {
-  text-align: center;
-  margin: auto;
-  font-size: 40px;
-}
-
-.section-img {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.hr-section-title {
-  height: 3px;
-  background-color: #124880;
-  width: 200px;
-  margin: 10px auto;
-  -webkit-transform: skew(33deg);
-          transform: skew(33deg);
-}
-
-.section-content .content-wrapper {
-  margin: auto;
-  padding: 60px 40px;
-}
-
-.section-content .content-wrapper p {
-  color: #263238;
-  text-align: justify;
-}
-
-.content-h2 {
-  font-weight: bold;
-  padding: 30px 0;
 }
 /*# sourceMappingURL=style.css.map */
