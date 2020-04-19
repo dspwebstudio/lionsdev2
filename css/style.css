@@ -252,6 +252,12 @@ header {
 /*  Sobre Nosotros General CSS */
 .clientes {
   padding: 60px;
+  min-height: 60vh;
+  margin: auto;
+}
+
+.carousel {
+  margin: auto;
 }
 
 .carousel .active {
@@ -396,11 +402,6 @@ header {
 
 .services .card-text {
   padding: 20px;
-}
-
-/* Clientes */
-.clientes {
-  min-height: 60vh;
 }
 
 /*---------------- BLOG ----------------*/
