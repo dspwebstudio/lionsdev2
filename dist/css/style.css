@@ -513,28 +513,77 @@ header {
 /*----------- ARTICULO -----------*/
 /* Articulo General CSS */
 .article .view, .article .section-img {
-  height: 50vh;
+  height: 35vh;
+  /* Portrait */
+  /* Landscape */
+  /* Laptop */
+  /* Desktop */
 }
 
-.article .view .section-img, .article .section-img .section-img {
+@media screen and (min-width: 576px) {
+  .article .view, .article .section-img {
+    height: 35vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article .view, .article .section-img {
+    height: 35vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article .view, .article .section-img {
+    height: 35vh;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .article .view, .article .section-img {
+    height: 50vh;
+  }
+}
+
+.article .section-img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.texto-articulo {
+.section-title__text {
   position: absolute;
-  top: 30vh;
+  top: 60px;
   width: 48vw;
   left: 26vw;
   right: 26vw;
   height: 40vh;
+  /* Landscape */
+  /* Laptop */
+  /* Desktop */
 }
 
-.titulo-texto {
+@media screen and (min-width: 768px) {
+  .section-title__text {
+    top: 120px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-title__text {
+    top: 200px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-title__text {
+    top: 200px;
+  }
+}
+
+.section-title__text-title {
   font-size: 2em;
 }
 
-.articulo-subtitle {
+.section-title__text-subtitle {
   font-size: 1em;
 }
 
