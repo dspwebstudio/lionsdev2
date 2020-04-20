@@ -1,14 +1,19 @@
 /*===================== FOOTER =====================*/
 
 footer
+    width: 100%
     .footer-hr 
         height: 0.1875rem
         background-color: #ffffff
         width: 12.5rem
-        margin: auto
+        margin: 20px auto
         transform: skew(33deg)
+        /* Portrait */
         @media screen and (min-width: 576px)
-            margin: 0
+            margin: 20px auto
+        /* Landscape */
+        @media screen and (min-width: 768px)
+            margin: 20px 0
     .mensaje 
         font-size: 1.125rem
     .footer-link 

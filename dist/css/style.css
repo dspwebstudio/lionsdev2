@@ -147,6 +147,7 @@ h5 {
 .btn {
   border-radius: 10px;
   color: #ffffff;
+  margin-top: 30px;
 }
 
 .btn:hover {
@@ -284,6 +285,85 @@ header {
     font-size: 25px;
     margin-top: 30px;
   }
+}
+
+/*========================= INDEX =========================*/
+.index {
+  z-index: 0;
+}
+
+.index .view {
+  height: 80vh;
+  /* Portrait */
+  /* Tablet */
+  /* Laptop */
+  /* Desktop */
+}
+
+@media screen and (min-width: 576px) {
+  .index .view {
+    height: 63vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .index .view {
+    height: 42.5vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .index .view {
+    height: 44.5vh;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .index .view {
+    height: 42vh;
+  }
+}
+
+.index .index__img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Landscape */
+  /* Tablet */
+  /* Laptop */
+  /* Desktop */
+}
+
+@media screen and (min-width: 576px) {
+  .index .index__img {
+    height: 63vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .index .index__img {
+    height: 42.5vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .index .index__img {
+    height: 44.5vh;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .index .index__img {
+    height: 42vh;
+  }
+}
+
+.hr-card {
+  height: 3px;
+  background-color: #124880;
+  width: 200px;
+  -webkit-transform: skew(33deg);
+          transform: skew(33deg);
 }
 
 /*==================== SOBRE NOSOTROS ====================*/
@@ -432,12 +512,11 @@ header {
 
 /*----------- ARTICULO -----------*/
 /* Articulo General CSS */
-.article .view {
-  height: 60vh;
+.article .view, .article .section-img {
+  height: 50vh;
 }
 
-.article .view img {
-  height: 60vh;
+.article .view .section-img, .article .section-img .section-img {
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -461,6 +540,10 @@ header {
 
 .modal {
   margin: auto;
+}
+
+.section-content__img {
+  cursor: pointer;
 }
 
 /*==================== CONTACTO ====================*/
@@ -511,18 +594,30 @@ header {
 
 /* Contacto Media Queries */
 /*===================== FOOTER =====================*/
+footer {
+  width: 100%;
+}
+
 footer .footer-hr {
   height: 0.1875rem;
   background-color: #ffffff;
   width: 12.5rem;
-  margin: auto;
+  margin: 20px auto;
   -webkit-transform: skew(33deg);
           transform: skew(33deg);
+  /* Portrait */
+  /* Landscape */
 }
 
 @media screen and (min-width: 576px) {
   footer .footer-hr {
-    margin: 0;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-hr {
+    margin: 20px 0;
   }
 }
 

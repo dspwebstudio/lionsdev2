@@ -1,11 +1,12 @@
 /*----------- ARTICULO -----------*/
 
+$article-title-image-height : 50vh
+
 /* Articulo General CSS */
 .article
-    .view
-        height: 60vh
-        img 
-            height: 60vh
+    .view, .section-img
+        height: $article-title-image-height
+        .section-img
             object-fit: cover
 .texto-articulo
     position: absolute
@@ -20,3 +21,5 @@
     font-size: 1em
 .modal 
     margin: auto
+.section-content__img
+    cursor: pointer
