@@ -9,12 +9,12 @@
   font-size: 0.8rem;
 }
 
-.blog .content-wrapper {
+.blog .o-section-content-wrapper {
   min-height: 24vh;
   padding: 1.875rem;
 }
 
-.blog .content-wrapper p {
+.blog .o-section-content-wrapper p {
   margin-top: 60px;
   padding: 10px 0;
 }

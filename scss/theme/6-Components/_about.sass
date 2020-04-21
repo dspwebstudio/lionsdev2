@@ -1,18 +1,20 @@
 /*==================== SOBRE NOSOTROS ====================*/
 .about
-    .img-title
-        @media screen and (max-width: 768px) //smartphones 
-            position: relative
-            top: 0
-        @media screen and (min-width: 768px) //tablets
-            position: relative
-            top: 0 px
-        @media screen and (min-width: 1280px) //desktop
-            position: relative
-            top: 0
-    .section-img
-        @media screen and (min-width: 1280px)
-            width: 100%
-            height: 100vh
+    .o-section-title__section-img_imagen
+
+        //Landscape
+        @media screen and (min-width: 576px)
             position: absolute
-            top: -300px
+            top: 0
+        //Tablets
+        @media screen and (min-width: 768px)
+            position: absolute
+            top: 0
+        //Laptop
+        @media screen and (min-width: 1024px)
+            position: absolute
+            top: -50px
+        //Desktop
+        @media screen and (min-width: 1280px)
+            position: absolute
+            top: -200px
