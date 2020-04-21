@@ -6,7 +6,7 @@
         "../../scss/core/bootstrap/_functions.scss",
         "../../scss/core/bootstrap/_variables.scss",
         "../../scss/core/_mixins.scss",
-        "../../scss/_custom-variables.scss",
+        "../../scss/custom-variables.scss",
         "../../scss/core/_colors.scss",
         "../../scss/core/_variables.scss",
         "../../scss/core/_global.scss",

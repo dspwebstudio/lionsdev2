@@ -7,7 +7,7 @@
         "../../scss/core/bootstrap/_variables.scss",
         "../../scss/core/bootstrap/_rfs.scss",
         "../../scss/core/_mixins.scss",
-        "../../scss/_custom-variables.scss",
+        "../../scss/custom-variables.scss",
         "../../scss/core/_colors.scss",
         "../../scss/core/_variables.scss",
         "../../scss/core/_global.scss",
@@ -35,7 +35,7 @@
         "../../scss/free/_steppers.scss",
         "../../scss/free/_loader.scss",
         "../../scss/free/_treeview.scss",
-        "../../scss/_custom-styles.scss"
+        "../../scss/custom-styles.scss"
     ],
     "names": [],
     "file": "mdb-free.css"

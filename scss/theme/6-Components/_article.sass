@@ -4,7 +4,7 @@ $article-title-image-height : 35vh
 
 /* Articulo General CSS */
 .article
-    .view, .section-img
+    .view, .main-view-img
         height: $article-title-image-height
         /* Portrait */
         @media screen and (min-width: 576px)
@@ -21,7 +21,7 @@ $article-title-image-height : 35vh
 
     .section-img
         object-fit: cover
-.section-title__text
+.main-view__text
     position: absolute
     top: 60px
     width: 48vw
@@ -38,9 +38,9 @@ $article-title-image-height : 35vh
     @media screen and (min-width: 1280px)
         top: 200px
 
-.section-title__text-title
+.main-view__text-title
     font-size: 2em
-.section-title__text-subtitle
+.main-view__text-subtitle
     font-size: 1em
 .modal 
     margin: auto
