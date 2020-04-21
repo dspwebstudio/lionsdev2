@@ -28,12 +28,20 @@
     overflow: hidden
     z-index: -1 //no mover
 
-.o-hr-section-title
+.o-section__hr
     height: 3px
     background-color: $s-color-theme
     width: 200px
-    margin: 10px auto
+    margin: auto
     transform: skew(33deg)
+
+    &--left
+        margin: 10px auto 20px 0
+    &--right
+        margin: 10px 0 20px auto
+    &--center
+        margin: 10px auto 20px auto
+    
 
 .o-section-content-wrapper
     margin: auto

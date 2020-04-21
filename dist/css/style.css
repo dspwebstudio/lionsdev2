@@ -112,13 +112,25 @@ h5 {
   z-index: -1;
 }
 
-.o-hr-section-title {
+.o-section__hr {
   height: 3px;
   background-color: #124880;
   width: 200px;
-  margin: 10px auto;
+  margin: auto;
   -webkit-transform: skew(33deg);
           transform: skew(33deg);
+}
+
+.o-section__hr--left {
+  margin: 10px auto 20px 0;
+}
+
+.o-section__hr--right {
+  margin: 10px 0 20px auto;
+}
+
+.o-section__hr--center {
+  margin: 10px auto 20px auto;
 }
 
 .o-section-content-wrapper {
@@ -138,11 +150,22 @@ h5 {
 
 /*======================= BUTTON =======================*/
 .o-btn-theme {
+  border: 1px solid #ffffff;
   border-radius: 10px;
   color: #ffffff;
   margin-top: 30px;
+}
+
+.o-btn-theme:hover {
   color: #ffffff;
+}
+
+.o-btn-theme--primary {
   background-color: #124880;
+}
+
+.o-btn-theme--secondary {
+  background-color: #1f7ad9;
 }
 
 /* =========================== HEADER ============================= */
@@ -295,11 +318,11 @@ header {
 }
 
 /*========================= INDEX =========================*/
-.index {
+.c-index {
   z-index: 0;
 }
 
-.index .view {
+.c-index .view {
   height: 80vh;
   /* Portrait */
   /* Tablet */
@@ -308,30 +331,30 @@ header {
 }
 
 @media screen and (min-width: 576px) {
-  .index .view {
+  .c-index .view {
     height: 63vh;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .index .view {
+  .c-index .view {
     height: 42.5vh;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .index .view {
+  .c-index .view {
     height: 44.5vh;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .index .view {
+  .c-index .view {
     height: 42vh;
   }
 }
 
-.index .index__img {
+.c-index__img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -342,35 +365,27 @@ header {
 }
 
 @media screen and (min-width: 576px) {
-  .index .index__img {
+  .c-index__img {
     height: 63vh;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .index .index__img {
+  .c-index__img {
     height: 42.5vh;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .index .index__img {
+  .c-index__img {
     height: 44.5vh;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .index .index__img {
+  .c-index__img {
     height: 42vh;
   }
-}
-
-.hr-card {
-  height: 3px;
-  background-color: #124880;
-  width: 200px;
-  -webkit-transform: skew(33deg);
-          transform: skew(33deg);
 }
 
 /*==================== SOBRE NOSOTROS ====================*/

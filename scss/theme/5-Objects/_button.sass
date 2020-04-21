@@ -1,9 +1,15 @@
 /*======================= BUTTON =======================*/ 
 
 .o-btn-theme
+    border: 1px solid #ffffff
     border-radius: 10px
     color: #ffffff
     margin-top: 30px
     &:hover 
-    color: #ffffff
-    background-color: $s-color-theme
+        color: #ffffff
+
+    &--primary
+        background-color: $s-color-theme
+    &--secondary
+        background-color: lighten($s-color-theme,20%)
+
