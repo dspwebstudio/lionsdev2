@@ -357,6 +357,10 @@ header {
   margin: auto;
 }
 
+.modal {
+  margin: auto;
+}
+
 /*==================== BIENVENIDA ====================*/
 @media screen and (min-width: 576px) {
   .slogan {
@@ -537,11 +541,6 @@ header {
 
 .card-body__subtitle {
   font-size: 0.8rem;
-}
-
-/*----------- ARTICULO -----------*/
-.modal {
-  margin: auto;
 }
 
 /*==================== CONTACTO ====================*/
