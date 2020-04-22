@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,iDAAiD;AAEjD,WAAW",
+    "mappings": "AAAA,iDAAiD",
     "sources": [
         "../../scss/theme/2-Tools/tools.sass"
     ],
