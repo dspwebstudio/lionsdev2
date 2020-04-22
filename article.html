@@ -120,47 +120,15 @@
 
     <!-- Contenido -->
     <main class="o-main">
-        <section class="article">
+        <section class="o-section">
 
             <!-- Section Title -->
-            <div class="o-section-title view">
-                <!-- Button trigger modal -->
-                <div type="button" data-toggle="modal" data-target="#exampleModal">
-                    <div class="o-section-title__section-img d-block w-100">
-                        <img loading="lazy" src="dist/img/imagenes/c4.jpg" class="img-fluid w-100 object-fit-cover" alt="laptop y café">
-                    </div>
-                </div>
-                <div class="section-title mask rgba-stylish-strong">
-                    <div class="section-title__text max-width mx-auto d-flex">
-                        <div class="white-text">
-                            <h1 class="h1-responsive section-title__text-title titulo-texto text-uppercase font-weight-bold">
-                                Articulo</h1>
-                            <hr class="o-section__hr">
-                            <div class="section-title__text-subtitle d-flex w-100 mb-3 mt-0 flex-column">
-                                <!-- Author -->
-                                <div class="author text-white my-2">
-                                    <i class="far fa-user s-text-theme mx-2"></i>
-                                    <span>dsperez</span>
-                                </div>
-                                <!-- ./Author -->
-
-                                <!-- Date -->
-                                <div class="date text-white my-2">
-                                    <i class="fas fa-calendar-alt s-text-theme mx-2"></i>
-                                    <span>11/04/2020</span>
-                                </div>
-                                <!-- ./Date -->
-
-                                <!-- Category -->
-                                <div class="category text-white my-2">
-                                    <i class="fas fa-check s-text-theme mx-2"></i>
-                                    <span>Tecnología</span>
-                                </div>
-                                <!-- ./Category -->
-
-                            </div>
-                        </div>
-
+            <div class="view">
+                <img src="./dist/img/imagenes/c4.jpg" class="o-section__img d-block w-100 position-fixed" alt="">
+                <div class="o-section__title">
+                    <div class="mask rgba-blue-light flex-center flex-column">
+                        <h1 class="o-section__h1">Article</h1>
+                        <hr class="o-section__hr o-section__hr--center">
                     </div>
                 </div>
             </div>
@@ -175,26 +143,34 @@
                             <!-- Imagen trigger modal -->
                             <div class="col-md-5">
                                 <div data-toggle="modal" data-target="#exampleModal">
-                                    <img loading="lazy" src="dist/img/imagenes/c4.jpg" class="o-section-content__img img-fluid w-100 object-fit-cover" alt="laptop y café">
-                                </div>                          
+                                    <img loading="lazy" src="dist/img/imagenes/c4.jpg"
+                                        class="o-section-content__img img-fluid w-100 object-fit-cover"
+                                        alt="laptop y café">
+                                </div>
                             </div>
                             <!-- ./Imagen trigger modal -->
 
                             <!-- Texto -->
                             <div class="col-md-7  pt-5 pt-md-0">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi neque laboriosam eum
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi neque laboriosam
+                                    eum
                                     tempora
-                                    adipisci voluptas iusto dolor sed soluta nesciunt minima ducimus ex earum, porro non
+                                    adipisci voluptas iusto dolor sed soluta nesciunt minima ducimus ex earum, porro
+                                    non
                                     asperiores
-                                    eveniet. Illum rem voluptatem ex omnis sapiente? Dolorem, eveniet expedita, ducimus
+                                    eveniet. Illum rem voluptatem ex omnis sapiente? Dolorem, eveniet expedita,
+                                    ducimus
                                     rerum
                                     corrupti illo fuga aliquam maiores vel exercitationem repellendus? Quisquam
                                     consequatur,
-                                    voluptatum, qui totam unde necessitatibus a consequuntur nisi mollitia accusantium
+                                    voluptatum, qui totam unde necessitatibus a consequuntur nisi mollitia
+                                    accusantium
                                     porro vero
-                                    numquam ab eaque laborum ullam facilis dolorum, ea voluptas ut ratione doloremque
+                                    numquam ab eaque laborum ullam facilis dolorum, ea voluptas ut ratione
+                                    doloremque
                                     neque facere.
-                                    Debitis ex eveniet voluptates a voluptate. Aut illo amet voluptatibus quisquam rem
+                                    Debitis ex eveniet voluptates a voluptate. Aut illo amet voluptatibus quisquam
+                                    rem
                                     earum qui cum
                                     nisi corrupti blanditiis. Molestias, tenetur? Unde voluptate at sunt. Omnis!
                                 </p>
@@ -204,14 +180,14 @@
                         </div>
                     </div>
                     <div class="w-100 mx-auto text-center mt-4">
-                        <a href="blog.html" class="btn o-btn-theme text-white">Volver</a>
+                        <a href="blog.html" class="btn o-btn-theme o-btn-theme--primary">Volver</a>
                     </div>
                 </div>
             </div>
             <!-- ./Section Content -->
 
-            <!-- Paginación --> 
-            <div class="s-color-theme-5">
+            <!-- Paginación -->
+            <div class="o-section-pagination s-color-theme-5">
                 <nav aria-label="Page navigation" class="d-flex align-items-center justify-content-center py-4">
                     <ul class="pagination pg-blue">
                         <li class="page-item">
@@ -231,30 +207,6 @@
                 </nav>
             </div>
             <!-- ./Paginación -->
-
-            <!-- /* ------------------------------------ MODAL ----------------------------------*/ -->
-            
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabc-index="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header s-color-theme">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <i class="fas fa-window-close white-text"></i>
-                            </button>
-                        </div>
-                        <div class="modal-body p-0">
-                            <img loading="lazy" src="dist/img/imagenes/c4.jpg" class="d-block w-100 object-fit-cover" alt="laptop y café">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Modal -->
-
-            <!-- /* ------------------------------------ MODAL ----------------------------------*/ -->
-
-
         </section>
     </main>
     <!-- Contenido -->

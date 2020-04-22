@@ -63,62 +63,84 @@ h5 {
   font-size: 14px;
 }
 
-.o-main {
+.o-section {
   margin-top: 160px;
 }
 
-.o-main .view {
+.o-section .view {
   width: 100%;
   height: 30vh;
 }
 
-@media screen and (max-width: 375px) {
-  .o-main .view {
-    height: 26vh;
-  }
+.o-section__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
 
 @media screen and (min-width: 576px) {
-  .o-main .view {
-    height: 30vh;
+  .o-section__img {
+    position: absolute;
+    top: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .o-main .view {
-    height: 40vh;
+  .o-section__img {
+    position: absolute;
+    top: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .o-main .view {
-    height: 38vh;
+  .o-section__img {
+    position: absolute;
+    top: -200px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .o-section__img {
+    position: absolute;
+    top: -200px;
+  }
+}
+
+.o-section__h1 {
+  color: #fff;
+}
+
+@media screen and (min-width: 576px) {
+  .o-section__h1 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .o-section__h1 {
+    font-size: 4em;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .o-main .view {
-    height: 50vh;
+  .o-section__h1 {
+    font-size: 4em;
   }
 }
 
-.o-section-title__section-img {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-  z-index: -1;
+@media screen and (min-width: 1280px) {
+  .o-section__h1 {
+    font-size: 4em;
+  }
 }
 
 .o-section__hr {
   height: 3px;
   background-color: #124880;
   width: 200px;
-  margin: auto;
   -webkit-transform: skew(33deg);
           transform: skew(33deg);
+  margin: 10px auto 20px auto;
 }
 
 .o-section__hr--left {
@@ -127,10 +149,6 @@ h5 {
 
 .o-section__hr--right {
   margin: 10px 0 20px auto;
-}
-
-.o-section__hr--center {
-  margin: 10px auto 20px auto;
 }
 
 .o-section-content-wrapper {
@@ -401,35 +419,6 @@ header {
   }
 }
 
-/*==================== SOBRE NOSOTROS ====================*/
-@media screen and (min-width: 576px) {
-  .about .o-section-title__section-img_imagen {
-    position: absolute;
-    top: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .about .o-section-title__section-img_imagen {
-    position: absolute;
-    top: 0;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .about .o-section-title__section-img_imagen {
-    position: absolute;
-    top: -50px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .about .o-section-title__section-img_imagen {
-    position: absolute;
-    top: -200px;
-  }
-}
-
 /*========================== CLIENTES ==========================*/
 .clientes {
   width: 100%;
@@ -535,78 +524,21 @@ header {
 
 /*----------- ARTICULO -----------*/
 /* Articulo General CSS */
-.article .view, .article .o-main-view-img {
-  height: 35vh;
-  /* Portrait */
-  /* Landscape */
-  /* Laptop */
-  /* Desktop */
-}
-
-@media screen and (min-width: 576px) {
-  .article .view, .article .o-main-view-img {
-    height: 35vh;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .article .view, .article .o-main-view-img {
-    height: 35vh;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .article .view, .article .o-main-view-img {
-    height: 35vh;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .article .view, .article .o-main-view-img {
-    height: 50vh;
-  }
-}
-
-.article .o-section-title__section-img {
+.o-section__img {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
+  z-index: -1;
 }
 
-.o-main-view__text {
-  position: absolute;
-  top: 60px;
-  width: 48vw;
-  left: 26vw;
-  right: 26vw;
-  height: 40vh;
-  /* Landscape */
-  /* Laptop */
-  /* Desktop */
-}
-
-@media screen and (min-width: 768px) {
-  .o-main-view__text {
-    top: 120px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .o-main-view__text {
-    top: 200px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .o-main-view__text {
-    top: 200px;
-  }
-}
-
-.o-main-view__text-title {
+.o-section__h1 {
   font-size: 2em;
 }
 
-.o-main-view__text-subtitle {
+.o-section__subtitle {
   font-size: 1em;
 }
 
@@ -614,8 +546,12 @@ header {
   margin: auto;
 }
 
-o-section-content__img {
+.o-section-content__img {
   cursor: pointer;
+}
+
+.o-section-pagination {
+  margin: auto;
 }
 
 /*==================== CONTACTO ====================*/

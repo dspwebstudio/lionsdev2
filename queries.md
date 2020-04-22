@@ -1,11 +1,12 @@
-/* Portrait */
+//* Portrait *//
 @media screen and (min-width: 576px)
-    
-/* Landscape */
+    <!-- Contenido -->
+//* Landscape *//
 @media screen and (min-width: 768px)
-    
-/* Laptop */
+    <!-- Contenido -->
+//* Laptop *//
 @media screen and (min-width: 1024px)
-
-/* Desktop */
+    <!-- Contenido -->
+//* Desktop *//
 @media screen and (min-width: 1280px)
+    <!-- Contenido -->
