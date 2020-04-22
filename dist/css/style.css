@@ -74,7 +74,8 @@ h5 {
 
 .o-section__img {
   width: 100%;
-  height: 30vh;
+  height: 100vh;
+  position: fixed;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
@@ -110,6 +111,7 @@ h5 {
 }
 
 .o-section__h1 {
+  font-size: 2em;
   color: #fff;
 }
 
@@ -135,6 +137,10 @@ h5 {
   .o-section__h1 {
     font-size: 4em;
   }
+}
+
+.o-section__subtitle {
+  font-size: 1em;
 }
 
 .o-section__hr {
@@ -180,6 +186,14 @@ h5 {
 .o-section-content__h2 {
   font-weight: bold;
   padding: 30px 0;
+}
+
+.o-section-content__img {
+  cursor: pointer;
+}
+
+.o-section-pagination {
+  margin: auto;
 }
 
 /*======================= BUTTON =======================*/
@@ -526,34 +540,7 @@ header {
 }
 
 /*----------- ARTICULO -----------*/
-/* Articulo General CSS */
-.o-section__img {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.o-section__h1 {
-  font-size: 2em;
-}
-
-.o-section__subtitle {
-  font-size: 1em;
-}
-
 .modal {
-  margin: auto;
-}
-
-.o-section-content__img {
-  cursor: pointer;
-}
-
-.o-section-pagination {
   margin: auto;
 }
 
