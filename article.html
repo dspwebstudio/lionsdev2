@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
     <link rel="stylesheet" href="dist/css/mdb.min.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="dist/css/normalize.css">
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="dist/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
@@ -142,7 +144,7 @@
 
                             <!-- Imagen trigger modal -->
                             <div class="col-md-5">
-                                <div data-toggle="modal" data-target="#exampleModal">
+                                <div data-toggle="modal" data-target="#basicExampleModal">
                                     <img loading="lazy" src="dist/img/imagenes/c4.jpg"
                                         class="o-section-content__img img-fluid w-100 object-fit-cover"
                                         alt="laptop y café">
@@ -210,6 +212,24 @@
         </section>
     </main>
     <!-- Contenido -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header s-color-theme">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text"><i class="fas fa-times"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <img loading="lazy" src="dist/img/imagenes/c4.jpg"
+                        class="o-section-content__img img-fluid w-100 object-fit-cover" alt="laptop y café">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Footer -->
